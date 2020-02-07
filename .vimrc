@@ -19,13 +19,13 @@ set nobackup					          " Don't create
 set nowritebackup
 set splitright                  " Split vertical windows right to the current
 "windows
-set splitbelow                  " Split horizontal windows below to the
+"set splitbelow                  " Split horizontal windows below to the
 "current windows
 set encoding=utf-8              " Set default encoding to UTF-8
-set autowrite                   " Automatically save before :next, :make etc.
-set autoread                    " Automatically reread changed files without
+"set autowrite                   " Automatically save before :next, :make etc.
+"set autoread                    " Automatically reread changed files without
 "asking me anything
-set laststatus=2
+"set laststatus=2
 set hidden
 "
 set ruler                       " Show the cursor position all the time
