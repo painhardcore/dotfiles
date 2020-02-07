@@ -48,7 +48,9 @@ set lazyredraw          	      " Wait to redraw "
 " set nocursorcolumn
 " set nocursorline
 "
-"
+
 call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'itchyny/lightline.vim'
 call plug#end()
