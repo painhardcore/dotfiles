@@ -19,7 +19,7 @@ set nobackup					          " Don't create
 set nowritebackup
 set splitright                  " Split vertical windows right to the current
 "windows
-"set splitbelow                  " Split horizontal windows below to the
+set splitright                  " Split horizontal windows below to the
 "current windows
 set encoding=utf-8              " Set default encoding to UTF-8
 "set autowrite                   " Automatically save before :next, :make etc.
