@@ -25,7 +25,7 @@ set encoding=utf-8              " Set default encoding to UTF-8
 "set autowrite                   " Automatically save before :next, :make etc.
 "set autoread                    " Automatically reread changed files without
 "asking me anything
-"set laststatus=2
+set laststatus=2
 set hidden
 "
 set ruler                       " Show the cursor position all the time
@@ -53,4 +53,5 @@ call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
