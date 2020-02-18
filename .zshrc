@@ -103,5 +103,6 @@ export VISUAL="/usr/bin/vim"
 export EDITOR="$VISUAL"
 export PATH="$HOME/.cargo/bin:$PATH"
 [[ -s "/home/kotey/.gvm/scripts/gvm" ]] && source "/home/kotey/.gvm/scripts/gvm"
-
+export PATH="$GOPATH/bin:$PATH"
+export PATH="/home/kotey/bin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
