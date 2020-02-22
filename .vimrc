@@ -53,7 +53,16 @@ let mapleader = "," " easy shortcuts, instead of \
 
 " Rust
 let g:rustfmt_autosave = 1
+let g:LanguageClient_serverCommands = {
+    \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
+    \ 'python': ['/usr/local/bin/pyls'],
+    \ }
 
+nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+" Or map each action separately
+nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 " Golang
 let g:go_fmt_command = "goimports"
 let g:go_fmt_fail_silently = 1
@@ -111,6 +120,7 @@ autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
 "Misc
 autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4 
 let g:deoplete#enable_at_startup = 1
+nmap <F8> :TagbarToggle<CR>
 "NERDTREE
 map <C-n> :NERDTreeToggle<CR>
 
@@ -136,6 +146,16 @@ Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
 " RUST
 Plug 'rust-lang/rust'
+Plug 'vim-syntastic/syntastic'
+Plug 'majutsushi/tagbar'
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+
+" (Optional) Multi-entry selection UI.
+Plug 'junegunn/fzf'
+
 " GO
 Plug 'fatih/vim-go' 
 Plug 'AndrewRadev/splitjoin.vim'
