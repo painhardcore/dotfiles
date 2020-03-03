@@ -41,13 +41,12 @@ set updatetime=100
 "set ignorecase                  " Search case insensitive...
 "set smartcase                   " ... but not when search pattern contains
 "upper case characters
-"set ttyfast
-"" set ttyscroll=3               " noop on linux ?
+set ttyscroll=3               " noop on linux ?
 set lazyredraw          	      " Wait to redraw "
 
 " speed up syntax highlighting
-" set nocursorcolumn
-" set nocursorline
+set nocursorcolumn
+set nocursorline
 
 let mapleader = "," " easy shortcuts, instead of \
 
@@ -76,10 +75,13 @@ let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_generate_tags = 1
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
-let g:go_metalinter_deadline = "5s"
+let g:go_fmt_fail_silently = 1
+let g:go_metalinter_deadline = "15s"
 let g:go_metalinter_autosave_enabled = ['vet', 'golint']
 let g:go_metalinter_autosave = 1
 let g:go_def_mode = 'gopls'
+let g:go_rename_command = 'gopls'
+let g:go_info_mode='gopls'
 "shows :GoInfo whereever the cursor moves to
 let g:go_auto_type_info = 1
 let g:go_auto_sameids = 1
