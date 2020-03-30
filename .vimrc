@@ -77,7 +77,7 @@ let g:go_highlight_generate_tags = 1
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_fmt_fail_silently = 1
 let g:go_metalinter_deadline = "15s"
-let g:go_metalinter_autosave_enabled = ['vet', 'golint']
+let g:go_metalinter_autosave_enabled = ['vet']
 let g:go_metalinter_autosave = 1
 let g:go_def_mode = 'gopls'
 let g:go_rename_command = 'gopls'
@@ -98,6 +98,7 @@ let g:go_auto_sameids = 1
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
 nnoremap <leader>a :cclose<CR>
+nnoremap <leader>x :ccl <bar> lcl<CR>
 " run and build 
 autocmd FileType go nmap <leader>r  <Plug>(go-run)
 autocmd FileType go nmap <leader>t  <Plug>(go-test)
@@ -163,6 +164,7 @@ Plug 'fatih/vim-go'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'SirVer/ultisnips'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'buoto/gotests-vim'
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -180,4 +182,5 @@ call plug#end()
 let g:rehash256 = 1
 let g:molokai_original = 1
 colorscheme molokai
+set completeopt=noselect
 call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
