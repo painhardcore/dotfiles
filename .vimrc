@@ -55,6 +55,7 @@ let g:rustfmt_autosave = 1
 let g:LanguageClient_serverCommands = {
     \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
     \ 'python': ['/usr/local/bin/pyls'],
+    \ 'c': ['clangd'],
     \ }
 
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
