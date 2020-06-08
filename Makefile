@@ -3,7 +3,7 @@
 default: install
 
 
-
+# install rule
 .PHONY: install
 install:
 	@ln -nfs ~/dotfiles/.vimrc ~/.vimrc
