@@ -98,11 +98,22 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
-
+#Devkit conf
+export DEVKIT_X11_FORWARDING_ENABLED_BOOL=true
+export DEVKIT_DOCKER_NETWORK_HOST_BOOL=true
+export DEVKIT_KIND_KERNEL_MODULE_SHARED_BOOL=true
+export DEVKIT_KIND_SRC_SHARED_BOOL=true
+export DEVKIT_CACHE_VAR_LIB_DOCKER_SHARED_BOOL=true
+export DEVKIT_USER_NAME=root
+export DEVKIT_DEVICES_SHARED_BOOL=true
+export DEVKIT_UDEV_SHARED_BOOL=true
+#
+#Other conf
+export PATH=$PATH:/usr/local/go/bin
 export VISUAL="/usr/bin/vim"
 export EDITOR="$VISUAL"
+export GOPATH="/home/kotey/go"
 export PATH="$HOME/.cargo/bin:$PATH"
-[[ -s "/home/kotey/.gvm/scripts/gvm" ]] && source "/home/kotey/.gvm/scripts/gvm"
 export PATH="$GOPATH/bin:$PATH"
 export PATH="/home/kotey/bin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
