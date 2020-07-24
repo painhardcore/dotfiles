@@ -2,6 +2,9 @@
 
 |     Combination | Description |
 |-----------------|-------------|
-| `<Crtl>+<w> <v> |  Vertical split |
-| `<Crtl>+<w> <s> |  Horizontal split |
-| `<Crtl>+<w>`<h,k,l,;> | Switch to up,down,left,right window |
+| `<Crtl>+<w>` `<v>` |  Vertical split |
+| `<Crtl>+<w>` `<s>` |  Horizontal split |
+| `<Crtl>+<w>` `<h,k,l,;>`| Switch to up,down,left,right window |
+
+
+
