@@ -7,6 +7,6 @@
 | `<Crtl>+<w>` `<h,k,l,;>`| Switch to up,down,left,right window |
 
 
-NerdTree toggle: <Crtl>+<n> 
+NerdTree toggle: `<Crtl>+<n>`.
 
 
