@@ -111,3 +111,5 @@ export PATH="$GOPATH/bin:$PATH"
 export PATH="/Users/kotey/bin:$PATH"
 export DEFAULT_USER="kotey"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/opt/homebrew/opt/postgresql@9.6/bin:$PATH"
+export PATH="/Users/kotey/zig-master:$PATH"
