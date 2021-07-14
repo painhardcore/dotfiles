@@ -1,7 +1,7 @@
 [user]
-	email = andrey.yurchenkov@dell.com
+	email = painhardcore@gmail.com
 	name = Andrey Yurchenkov
-	signingkey = DA1B995F12CF498C
+	signingkey = B4B1278A26B779A7 
 [commit]
 	gpgsign = true
 [color]
