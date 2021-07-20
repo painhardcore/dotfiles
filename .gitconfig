@@ -7,6 +7,9 @@
 [color]
   # Enable colors in color-supporting terminals
   ui = auto
+[url "ssh://git@github.com/"]
+    insteadOf = https://github.com/
+
 [alias]
   # List available aliases
   aliases = !git config --get-regexp alias | sed -re 's/alias\\.(\\S*)\\s(.*)$/\\1 = \\2/g'
@@ -38,3 +41,5 @@
   submoduleSummary = true
   # Recursively traverse untracked directories to display all contents
   showUntrackedFiles = all
+[init]
+	defaultBranch = master
