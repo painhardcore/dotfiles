@@ -18,6 +18,7 @@
   co = checkout
   st = status
   rb = rebase origin/master
+  fp = push --force
   # Display tree-like log, because default log is a pain…
   lg = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
   # Useful when you have to update your last commit
