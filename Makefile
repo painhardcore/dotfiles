@@ -6,7 +6,7 @@ default: install
 
 .PHONY: install
 install:
-	@ln -nfs ~/dotfiles/.vimrc ~/.vimrc
-	@ln -nfs ~/dotfiles/.tmux.conf ~/.tmux.conf
-	@ln -nfs ~/dotfiles/.zshrc ~/.zshrc
+	@ln -nfs ~/Documents/dotfiles/.vimrc ~/.vimrc
+	@ln -nfs ~/Documents/dotfiles/.tmux.conf ~/.tmux.conf
+	@ln -nfs ~/Documents/dotfiles/.zshrc ~/.zshrc
 
