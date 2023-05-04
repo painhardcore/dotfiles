@@ -71,7 +71,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git
+#	git
 	docker
 	golang
 	kubectl
@@ -123,3 +123,22 @@ export PATH="/opt/homebrew/opt/postgresql@9.6/bin:$PATH"
 export PATH="/Users/kotey/zig-master:$PATH"
 alias kubeon="export RPROMPT='%{\$fg[blue]%}(\$ZSH_KUBECTL_PROMPT)%{\$reset_color%}'"
 alias kubeoff="unset RPROMPT"
+# -- START ACTIVESTATE INSTALLATION
+export PATH="/Users/kotey/Library/Application Support/KomodoIDE/12.0/XRE/state:$PATH"
+# -- STOP ACTIVESTATE INSTALLATION
+# -- START ACTIVESTATE DEFAULT RUNTIME ENVIRONMENT
+export PATH="/Users/kotey/Library/Caches/activestate/bin:$PATH"
+# -- STOP ACTIVESTATE DEFAULT RUNTIME ENVIRONMENT
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/kotey/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+export PATH="/Users/kotey/.local/bin:$PATH"
+export PATH="/Users/kotey/.nimble/bin:$PATH"
