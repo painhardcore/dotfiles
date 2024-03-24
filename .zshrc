@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/kotey/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -74,9 +74,9 @@ plugins=(
 #	git
 	docker
 	golang
-	kubectl
+	#kubectl
 	zsh-autosuggestions
-	zsh-kubectl-prompt
+	#zsh-kubectl-prompt
 )
 
 
@@ -110,35 +110,29 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 #
 #Other conf
-export PATH=$PATH:/usr/local/go/bin
 export VISUAL="/opt/homebrew/bin/nvim"
 export EDITOR="$VISUAL"
-export GOPATH="/Users/kotey/go"
-export PATH="$HOME/.cargo/bin:$PATH"
+export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
-export PATH="/Users/kotey/bin:$PATH"
-export DEFAULT_USER="kotey"
+export PATH="$HOME/bin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export PATH="/opt/homebrew/opt/postgresql@9.6/bin:$PATH"
-export PATH="/Users/kotey/zig-master:$PATH"
+export PATH="$HOME/zig-master:$PATH"
 alias kubeon="export RPROMPT='%{\$fg[blue]%}(\$ZSH_KUBECTL_PROMPT)%{\$reset_color%}'"
 alias kubeoff="unset RPROMPT"
-# -- START ACTIVESTATE INSTALLATION
-export PATH="/Users/kotey/Library/Application Support/KomodoIDE/12.0/XRE/state:$PATH"
 # -- STOP ACTIVESTATE INSTALLATION
 # -- START ACTIVESTATE DEFAULT RUNTIME ENVIRONMENT
-export PATH="/Users/kotey/Library/Caches/activestate/bin:$PATH"
+export PATH="$HOME/Library/Caches/activestate/bin:$PATH"
 # -- STOP ACTIVESTATE DEFAULT RUNTIME ENVIRONMENT
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/kotey/.rd/bin:$PATH"
+export PATH="$HOME/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
-# Generated for envman. Do not edit.
-[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
-
-export PATH="/Users/kotey/.local/bin:$PATH"
-export PATH="/Users/kotey/.nimble/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.nimble/bin:$PATH"
+export VAULT_ADDR="https://vault.adjust.com"
+source ~/.ssh/ssh_helper.sh
+alias python=/usr/bin/python3

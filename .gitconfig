@@ -18,6 +18,7 @@
   co = checkout
   st = status
   rb = rebase origin/master
+  pl = pull origin master
   fp = push --force
   # Display tree-like log, because default log is a pain…
   lg = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
@@ -45,3 +46,9 @@
   showUntrackedFiles = all
 [init]
 	defaultBranch = master
+[gpg]
+	program = /opt/homebrew/bin/gpg
+[push]
+	autoSetupRemote = true
+[credential]
+	helper = osxkeychain
