@@ -151,5 +151,5 @@ alias python=/usr/bin/python3
 source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-. /usr/local/opt/asdf/libexec/asdf.sh
+. $(brew --prefix)/opt/asdf/libexec/asdf.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
