@@ -15,7 +15,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -81,8 +81,8 @@ plugins=(
 #	git
 	docker
 	golang
+	fzf-zsh-plugin
 	#kubectl
-	zsh-autosuggestions
 	#zsh-kubectl-prompt
 )
 
@@ -117,7 +117,7 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 #
 #Other conf
-export VISUAL="/opt/homebrew/bin/nvim"
+export VISUAL="$(brew --prefix)/bin/nvim"
 export EDITOR="$VISUAL"
 export GOPATH="$HOME/go"
 export PATH="$GOPATH/bin:$PATH"
@@ -131,8 +131,7 @@ alias kubeoff="unset RPROMPT"
 export PATH="$HOME/Library/Caches/activestate/bin:$PATH"
 # -- STOP ACTIVESTATE DEFAULT RUNTIME ENVIRONMENT
 
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+export PATH="$(brew --prefix)/opt/libpq/bin:$PATH"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
 export PATH="$HOME/.rd/bin:$PATH"
@@ -141,9 +140,16 @@ export PATH="$HOME/.rd/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.nimble/bin:$PATH"
 export VAULT_ADDR="https://vault.adjust.com"
-source ~/.ssh/ssh_helper.sh
-alias python=/usr/bin/python3
-source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+if [ -f "~/.ssh/ssh_helper.sh" ]; then
+    source "~/.ssh/ssh_helper.sh"
+fi
+
+alias python=/usr/bin/python3
+
+
+source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+. /usr/local/opt/asdf/libexec/asdf.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
