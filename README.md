@@ -1,6 +1,7 @@
 # My dot files
 Outdated ofcourse.
 Just mine files. Nothing interesting here.
+use painhardcore as username
 ```
 brew install powerlevel10k
 brew install zsh-autosuggestions
