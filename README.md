@@ -7,6 +7,7 @@ brew install powerlevel10k
 brew install zsh-autosuggestions
 brew install coreutils curl git
 brew install asdf
+brew install gpg
 ```
 
 ```
