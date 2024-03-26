@@ -47,7 +47,7 @@
 [init]
 	defaultBranch = master
 [gpg]
-	program = /Users/painhardcore/.magicGPG.sh
+	program = /Users/painhardcore/gpg
 [push]
 	autoSetupRemote = true
 [credential]
