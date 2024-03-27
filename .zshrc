@@ -141,8 +141,8 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.nimble/bin:$PATH"
 export VAULT_ADDR="https://vault.adjust.com"
 
-if [ -f "~/.ssh/ssh_helper.sh" ]; then
-    source "~/.ssh/ssh_helper.sh"
+if [ -f "$HOME/.ssh/ssh_helper.sh" ]; then
+    source "$HOME/.ssh/ssh_helper.sh"
 fi
 
 alias python=/usr/bin/python3
@@ -155,4 +155,3 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
