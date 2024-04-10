@@ -10,6 +10,9 @@ brew install zsh-autosuggestions
 brew install coreutils curl git
 brew install asdf
 brew install gpg
+brew install tmux
+brew install fzf
+brew install ripgrep
 ```
 
 ## little bit of zsh setup
