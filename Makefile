@@ -11,3 +11,4 @@ install:
 	@ln -nfs ~/Documents/dotfiles/.p10k.zsh ~/.p10k.zsh
 	@ln -nfs ~/Documents/dotfiles/.gitconfig ~/.gitconfig
 	@ln -nfs $$(brew --prefix)/bin/gpg ~/gpg
+	@ln -nfs ~/Documents/dotfiles/.tmux.conf ~/.tmux.conf
