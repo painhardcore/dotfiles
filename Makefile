@@ -12,3 +12,4 @@ install:
 	@ln -nfs ~/Documents/dotfiles/.gitconfig ~/.gitconfig
 	@ln -nfs $$(brew --prefix)/bin/gpg ~/gpg
 	@ln -nfs ~/Documents/dotfiles/.tmux.conf ~/.tmux.conf
+	@ln -nfs ~/Documents/dotfiles/nvim ~/.config/nvim 
