@@ -217,7 +217,7 @@ require("lazy").setup({
 	{ -- Fuzzy Finder (files, lsp, etc)
 		"nvim-telescope/telescope.nvim",
 		event = "VimEnter",
-		branch = "0.1.x",
+		branch = "master",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 			{ -- If encountering errors, see telescope-fzf-native README for installation instructions
@@ -264,11 +264,12 @@ require("lazy").setup({
 				-- You can put your default mappings / updates / etc. in here
 				--  All the info you're looking for is in `:help telescope.setup()`
 				--
-				path_display = { "smart" },
-				file_ignore_patterns = { ".git/", "node_modules/" },
-				layout_config = { width = 0.99 },
-				horizontal = { width = 0.99 },
-				-- pickers = {}
+				--
+				defaults = {
+					path_display = { "truncate" },
+					layout_config = { horizontal = { width = 0.99 } },
+					file_ignore_patterns = { ".git/", "node_modules/" },
+				},
 				extensions = {
 					["ui-select"] = {
 						require("telescope.themes").get_dropdown(),

@@ -134,7 +134,7 @@ export PATH="$HOME/Library/Caches/activestate/bin:$PATH"
 export PATH="$(brew --prefix)/opt/libpq/bin:$PATH"
 
 ### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="$HOME/.rd/bin:$PATH"
+export PATH="/Users/kotey/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
 export PATH="$HOME/.local/bin:$PATH"
