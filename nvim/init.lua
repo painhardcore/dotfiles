@@ -259,7 +259,7 @@ require("lazy").setup({
 				--
 				--
 				defaults = {
-					path_display = { "truncate" },
+					-- path_display = { "truncate" },
 					layout_config = { horizontal = { width = 0.99 } },
 					file_ignore_patterns = { ".git/", "node_modules/" },
 				},
@@ -546,7 +546,7 @@ require("lazy").setup({
 			end,
 			formatters_by_ft = {
 				lua = { "stylua" },
-				go = { "goimports", "gofmt" },
+				go = { "goimports", "gofumpt" },
 				-- Conform can also run multiple formatters sequentially
 				-- python = { "isort", "black" },
 				--
@@ -755,7 +755,9 @@ require("lazy").setup({
 	{
 		"tpope/vim-fugitive",
 	},
-	{ "ThePrimeagen/git-worktree.nvim" },
+	{ "awerebea/git-worktree.nvim", branch = "handle_changes_in_telescope_api" },
+	--  { "ThePrimeagen/git-worktree.nvim" },
+	-- I hope Prime will fix his shit
 	{
 		"christoomey/vim-tmux-navigator",
 		cmd = {
@@ -771,6 +773,15 @@ require("lazy").setup({
 			{ "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>" },
 			{ "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
 			{ "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
+		},
+	},
+	{
+		"vim-test/vim-test",
+		keys = {
+			{ "<leader>tn", "<cmd>TestNearest<cr>" },
+			{ "<leader>tf", "<cmd>TestFile<cr>" },
+			{ "<leader>ts", "<cmd>TestSuite<cr>" },
+			{ "<leader>tl", "<cmd>TestLast<cr>" },
 		},
 	},
 	-- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
