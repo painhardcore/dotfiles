@@ -3,7 +3,7 @@
 	name = Andrey Yurchenkov
 	signingkey = B4B1278A26B779A7 
 [commit]
-	gpgsign = true
+	gpgsign = false
 [color]
   # Enable colors in color-supporting terminals
   ui = auto
